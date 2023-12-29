@@ -1,0 +1,251 @@
+<template>
+  <section class="projects">
+    <div>
+      <h2>
+        Projetos <br />
+        recentes.
+      </h2>
+    </div>
+    <div class="boxes">
+      <div
+        v-for="project in projects"
+        :key="project.id"
+        class="box"
+        :class="{ flipped: project.isFlipped }"
+      >
+        <div class="flip-card-inner">
+          <div class="box-front">
+            <!-- Conteúdo da frente da caixa -->
+            <div class="box-title">
+              <h3>{{ project.title }}</h3>
+              <img :src="project.icon" alt="" />
+            </div>
+            <div class="box-img">
+              <img :src="project.image" alt=""/>
+            </div>
+            <div class="box-links">
+              <a :href="project.github" target="_blank">
+                <img src="../imgs/github.svg" alt="" />
+              </a>
+              <a :href="project.deployLink" target="_blank">
+                <img src="../imgs/mdi_cellphone-link.svg" alt="" />
+              </a>
+              <button @click="flipBox(project.id)">
+                <img src="../imgs/mdi_rotate-360.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="box-back">
+            <!-- Conteúdo do verso da caixa -->
+            <div class="box-title">
+              <h3>{{ project.title }}</h3>
+              <img :src="project.icon" alt="" />
+            </div>
+            <div class="box-txt">
+              <p>{{ project.description }}</p>
+            </div>
+            <div class="box-links">
+              <a :href="project.github">
+                <img src="../imgs/github.svg" alt="" />
+              </a>
+              <a :href="project.deployLink">
+                <img src="../imgs/mdi_cellphone-link.svg" alt="" />
+              </a>
+              <button @click="flipBox(project.id)">
+                <img src="../imgs/mdi_rotate-360.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+  
+  <script>
+import IconReact from "../imgs/skill-icons_react-dark.svg";
+import ImgStarWars from "../imgs/starwars 1.png";
+import IconJS from "../imgs/logos_javascript.svg";
+import ImgTravelBackpack from "../imgs/travelbackpack 1.png";
+import ImgCineNow from "../imgs/cinenow 1.png";
+
+export default {
+  data() {
+    return {
+      projects: [
+        {
+          id: 1,
+          title: "StarWars API",
+          icon: IconReact,
+          image: ImgStarWars,
+          github: "https://github.com/pdrollucas/StarWarsAPI",
+          deployLink: "https://star-wars-api-fawn.vercel.app/",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit...",
+          isFlipped: false,
+        },
+        {
+          id: 2,
+          title: "Travel Backpack",
+          icon: IconJS,
+          image: ImgTravelBackpack,
+          github: "https://github.com/pdrollucas/travel-backpack",
+          deployLink: "https://travel-backpack.vercel.app/",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit...",
+          isFlipped: false,
+        },
+        {
+          id: 3,
+          title: "CineNow API",
+          icon: IconReact,
+          image: ImgCineNow,
+          github: "https://github.com/pdrollucas/cineNow",
+          deployLink: "https://cinenow.netlify.app/",
+          description:
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit...",
+          isFlipped: false,
+        },
+      ],
+    };
+  },
+  methods: {
+    flipBox(projectId) {
+      const project = this.projects.find((p) => p.id === projectId);
+      if (project) {
+        project.isFlipped = !project.isFlipped;
+      }
+    },
+  },
+};
+</script>
+
+<style scoped>
+.projects {
+  z-index: 999; /* para não ficar por cima do header */
+  background-color: white;
+  padding: 2vw 10vw;
+}
+
+h2 {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: inline-block;
+  padding: 0.75vw 2vw 0.75vw 0.75vw;
+  text-align: left;
+  background-color: #f2f2f2;
+  font-size: 1.25vw;
+  width: 11vw;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+}
+
+.box {
+  width: 20vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  margin: 1vw 2vw;
+}
+
+.box-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+  /* background-color: #91EAFF; */
+  background-color: #c3baff;
+  font-size: 1vw;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.box-title img {
+  width: 2vw;
+}
+
+.box-img {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+}
+
+.box-img img {
+  width: 90%;
+  height: 15vw;
+}
+
+.box-links {
+  width: 100%;
+  padding: 1vw;
+  background-color: #c3baff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box-links img, .box-links button {
+  width: 2.5vw;
+}
+
+.box-txt {
+  font-size: 1vw;
+  height: 100%;
+  padding: 1.5vw;
+  text-align: justify;
+  background-color: #f2f2f2;
+}
+
+a img, button img{
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.25),
+    1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    padding: 0.5vw;
+}
+
+/* Efeito de virar a carta */
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.box.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.box-front,
+.box-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-back {
+  transform: rotateY(180deg);
+}
+</style>
