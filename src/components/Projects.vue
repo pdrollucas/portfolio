@@ -204,7 +204,7 @@ h2 {
 }
 
 .box-txt {
-  font-size: 1vw;
+  font-size: 1.25vw;
   height: 100%;
   padding: 1.5vw;
   text-align: justify;
@@ -247,5 +247,15 @@ a img, button img{
 
 .box-back {
   transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 16px;
+    width: 30vw;
+    padding: 1.25vw 2vw 1.25vw 1.25vw;
+    margin-bottom: 16px;
+  }
+  
 }
 </style>

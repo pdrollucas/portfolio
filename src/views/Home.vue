@@ -34,7 +34,7 @@
 
 <style>
   .main{
-    background-color: #F2F2F2;
+    background-color: #dddada;
     font-family: 'Baloo 2', sans-serif;
   }
 </style>

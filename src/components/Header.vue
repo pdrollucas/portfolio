@@ -26,7 +26,8 @@
   /* background-color: #91EAFF; */
   background-color: white;
   color: black;
-  font-size: 1.2vw;
+  /* font-size: 1.2vw; */
+  font-size: 18px;
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.25),
     1px 1px 2px 0px rgba(0, 0, 0, 0.25);
   position: fixed;
@@ -67,9 +68,11 @@ button:last-child {
 @media only screen and (max-width: 600px) {
   .header {
     padding: 0.25vw 0;
-    font-size: 3vw;
+    /* font-size: 3vw; */
+    font-size: 16px;
     height: 5vh;
     justify-content: space-around;
+    width: 100vw;
   }
 
   .logo {

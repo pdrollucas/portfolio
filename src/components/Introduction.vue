@@ -52,6 +52,7 @@
         padding: 1vw;
         font-size: 1.5vw;
         width: 20vw;
+        /* width: 25vw; */
         background-color: #91EAFF;
         margin-bottom: 1vw;
     }
