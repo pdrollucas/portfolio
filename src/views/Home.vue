@@ -15,9 +15,10 @@
   import Introduction from '../components/Introduction.vue';
   import Skills from '../components/Skills.vue';
   import MyPath from '../components/Path.vue';
-  import Projects from '../components/Projects.vue';
+  import Projects from "@/components/Projects.vue";
   import WhoIAm from '../components/WhoAmI.vue';
   import MyFooter from '../components/Footer.vue'
+
 
   export default{
     components: {

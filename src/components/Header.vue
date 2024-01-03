@@ -76,7 +76,7 @@ button:last-child {
   }
 
   .logo {
-    width: 8vw;
+    width: 24px;
   }
 
   a,
@@ -85,8 +85,8 @@ button:last-child {
   }
 
   button img {
-    width: 100%;
-    height: 3vh;
+    width: 24px;
+    height: 24px;
   }
 }
 </style>
