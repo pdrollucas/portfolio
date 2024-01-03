@@ -1,5 +1,5 @@
 <template>
-    <section class="introduction">
+    <section class="introduction" id="introduction">
         <div class="box">
             <div class="box-text">
                 <h2>Olá!</h2>

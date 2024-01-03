@@ -1,5 +1,5 @@
 <template>
-  <section class="whoAmI">
+  <section class="whoAmI" id="about">
     <h2>
       Quem eu <br />
       sou?

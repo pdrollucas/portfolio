@@ -1,10 +1,10 @@
 <template>
   <section class="header">
-    <img src="../imgs/Frame 1.svg" alt="" class="logo" />
+    <img src="../imgs/Frame 1.svg" alt="" class="logo" @click="scrollToSection('introduction')"/>
     <div class="header-items">
-      <a href="">Experiência</a>
-      <a href="">Projetos</a>
-      <a href="">Sobre</a>
+      <a @click="scrollToSection('skills')">Experiência</a>
+      <a @click="scrollToSection('projects')">Projetos</a>
+      <a @click="scrollToSection('about')">Sobre</a>
     </div>
     <div class="header-items">
       <button><img src="../imgs/flag-brasil.png" alt="" /></button>
@@ -14,6 +14,22 @@
 </template>
 
 <script>
+export default {
+  methods: {
+    scrollToSection(sectionId) {
+      const targetElement = document.getElementById(sectionId);
+
+      if (targetElement) {
+        const offset = -45
+        window.scrollTo({
+          top: targetElement.offsetTop + offset,
+          behavior: 'smooth',
+        });
+      }
+    },
+  },
+};
+
 </script>
 
 <style scoped>
@@ -32,6 +48,10 @@
     1px 1px 2px 0px rgba(0, 0, 0, 0.25);
   position: fixed;
   width: 100%;
+}
+
+a, img{
+  cursor: pointer;
 }
 
 a,
