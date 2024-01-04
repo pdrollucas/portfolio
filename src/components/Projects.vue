@@ -307,6 +307,19 @@ button img {
     1px 1px 2px 0px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
   padding: 0.5vw;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  background-color: #f2f2f2;
+}
+
+a img:hover,
+button img:hover {
+  opacity: 0.5;
+}
+
+a img:active,
+button img:active {
+  opacity: 1;
 }
 
 /* Efeito de virar a carta */

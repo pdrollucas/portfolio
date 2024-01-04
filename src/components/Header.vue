@@ -52,6 +52,16 @@ export default {
 
 a, img{
   cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+a:hover, img:hover{
+  opacity: 0.5;
+}
+
+a:active, img:active{
+  opacity: 1;
 }
 
 a,

@@ -27,6 +27,12 @@ button {
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.25),
     1px 1px 2px 0px rgba(0, 0, 0, 0.25);
   border: 0.1vw solid black;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+button:hover{
+  opacity: 0.7;
 }
 
 .box-links button {
