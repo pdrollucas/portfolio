@@ -1,0 +1,55 @@
+{
+    "header": {
+        "skills": "Experience",
+        "projects": "Projects",
+        "about": "About"
+    },
+    "introduction": {
+        "hello": "Hello !",
+        "name": "My name is Pedro Lucas.",
+        "text": "I am a front-end developer and a UI/UX designer :)"
+    },
+    "links": {
+        "btn-cv": "Download CV"
+    },
+    "skills": {
+        "title": {
+            "up": "Experiences",
+            "down": "and Skills."
+        },
+        "text": "It was thanks to programming that I found myself again, and for this reason, I constantly seek to improve. I have an affinity for front-end development and a curiosity about everything that surrounds it."
+    },
+    "path": {
+        "titles": {
+            "first": "Online courses",
+            "second": "University",
+            "third": "Intership Vue.JS"
+        },
+        "texts": {
+            "first": "In September 2022, I started my journey in programming studies through online courses.",
+            "second": "In February 2023, I began studying Software Engineering at Católica de SC - Joinville.",
+            "third": "In October 2023, I started working as an intern Vue.JS developer for the company Dinamio."
+        }
+    },
+    "projects": {
+        "title": {
+            "up": "Latest",
+            "down": "projects."
+        }
+    },
+    "about": {
+        "title": {
+            "up": "Who am",
+            "down": "I ?"
+        },
+        "box-principal": {
+            "title": "I am human!",
+            "text": "In addition to my programming and design studies, I like to make the most of my free time by hanging out with friends, going to the gym, and reading good books. There's always something playing on my headphones. I'm a fan of samba, MPB and funk."
+        },
+        "cards": {
+            "first": "Hang out with friends",
+            "second": "Work out",
+            "third": "Read"
+        }
+    }
+}

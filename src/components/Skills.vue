@@ -2,13 +2,11 @@
   <section class="skills" id="skills">
     <div>
       <h2>
-        Experiências e <br />
-        Habilidades.
+        {{ $t('skills.title.up') }} <br />
+        {{ $t('skills.title.down') }}
       </h2>
       <p class="text-box">
-        Foi graças a programação que me reencontrei e por esse motivo busco me
-        aperfeiçoar constantemente. Tenho um apreço por desenvolvimento
-        front-end e possuo curiosidade em tudo o que o cerca.
+        {{ $t("skills.text") }}
       </p>
     </div>
     <div class="skills-items">

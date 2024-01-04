@@ -2,8 +2,8 @@
   <section class="projects" id="projects">
     <div>
       <h2>
-        Projetos <br />
-        recentes.
+        {{ $t('projects.title.up') }} <br />
+        {{ $t('projects.title.down') }}
       </h2>
     </div>
 

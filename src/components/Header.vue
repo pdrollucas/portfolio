@@ -2,13 +2,13 @@
   <section class="header">
     <img src="../imgs/Frame 1.svg" alt="" class="logo" @click="scrollToSection('introduction')"/>
     <div class="header-items">
-      <a @click="scrollToSection('skills')">Experiência</a>
-      <a @click="scrollToSection('projects')">Projetos</a>
-      <a @click="scrollToSection('about')">Sobre</a>
+      <a @click="scrollToSection('skills')">{{ $t('header.skills') }}</a>
+      <a @click="scrollToSection('projects')">{{ $t('header.projects') }}</a>
+      <a @click="scrollToSection('about')">{{ $t('header.about') }}</a>
     </div>
     <div class="header-items">
-      <button><img src="../imgs/flag-brasil.png" alt="" /></button>
-      <button><img src="../imgs/flag-usa.png" alt="" /></button>
+      <button @click="changeLanguage('pt_BR')"><img src="../imgs/flag-brasil.png" alt=""/></button>
+      <button @click="changeLanguage('EN')"><img src="../imgs/flag-usa.png" alt=""/></button>
     </div>
   </section>
 </template>
@@ -16,6 +16,9 @@
 <script>
 export default {
   methods: {
+    changeLanguage(locale) {
+      this.$i18n.locale = locale;
+    },
     scrollToSection(sectionId) {
       const targetElement = document.getElementById(sectionId);
 

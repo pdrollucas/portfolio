@@ -1,30 +1,28 @@
 <template>
   <section class="whoAmI" id="about">
     <h2>
-      Quem eu <br />
-      sou?
+      {{ $t('about.title.up') }} <br />
+      {{ $t('about.title.down') }}
     </h2>
     <div class="boxes">
       <div class="box-principal">
-        <h3>Eu sou uma pessoa!</h3>
+        <h3>{{ $t('about.box-principal.title') }}</h3>
         <p>
-          Para além dos estudos de programação e design, gosto de aproveitar meu
-          tempo livre para sair com amigos, ir para academia e ler bons livros.
-          Em meu fone sempre está tocando algo. Sou fã de samba, mpb e funk.
+          {{ $t('about.box-principal.text') }}
         </p>
       </div>
       <div class="box-cards">
         <div class="card">
           <img src="../imgs/beer.png" alt="" />
-          <p>Sair com amigos</p>
+          <p>{{ $t('about.cards.first') }}</p>
         </div>
         <div class="card">
           <img src="../imgs/gym.png" alt="" />
-          <p>Academia</p>
+          <p>{{ $t('about.cards.second') }}</p>
         </div>
         <div class="card">
           <img src="../imgs/book.png" alt="" />
-          <p>Ler</p>
+          <p>{{ $t('about.cards.third') }}</p>
         </div>
       </div>
     </div>

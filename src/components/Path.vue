@@ -9,16 +9,16 @@
         </div>
         <div class="texts">
             <div class="box">
-                <h2>Cursos online</h2>
-                <p>Em setembro de 2022 iniciei meus estudos em programação por cursos online.</p>
+                <h2>{{ $t('path.titles.first') }}</h2>
+                <p>{{ $t('path.texts.first') }}</p>
             </div>
             <div class="box">
-                <h2>Faculdade</h2>
-                <p>Em fevereiro de 2023 comecei a cursar Engenharia de Software na Católica de SC - Joinville. </p>
+                <h2>{{ $t('path.titles.second') }}</h2>
+                <p>{{ $t('path.texts.second') }} </p>
             </div>
             <div class="box">
-                <h2>Estágio Vue.JS</h2>
-                <p>Em  outubro de 2023 comecei a estagiar como Desenvolvedor Vue.JS para a empresa Dinamio - Joinville. </p>
+                <h2>{{ $t('path.titles.third') }}</h2>
+                <p>{{ $t('path.texts.third') }} </p>
             </div>
         </div>
     </section>

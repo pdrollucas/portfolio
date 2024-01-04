@@ -1,0 +1,55 @@
+{
+    "header": {
+        "skills": "Experiência",
+        "projects": "Projetos",
+        "about": "Sobre"
+    },
+    "introduction": {
+        "hello": "Olá !",
+        "name": "Meu nome é Pedro Lucas.",
+        "text": "Sou desenvolvedor front-end e UI/UX designer :)"
+    },
+    "links": {
+        "btn-cv": "Baixar CV"
+    },
+    "skills": {
+        "title": {
+            "up": "Experiências e",
+            "down": "Habilidades."
+        },
+        "text": "Foi graças a programação que me reencontrei e por esse motivo busco me aperfeiçoar constantemente. Tenho um apreço por desenvolvimento front-end e possuo curiosidade em tudo o que o cerca."
+    },
+    "path": {
+        "titles": {
+            "first": "Cursos online",
+            "second": "Faculdade",
+            "third": "Estágio Vue.JS"
+        },
+        "texts": {
+            "first": "Em setembro de 2022 iniciei meus estudos em programação por cursos online.",
+            "second": "Em fevereiro de 2023 comecei a cursar Engenharia de Software na Católica de SC - Joinville.",
+            "third": "Em  outubro de 2023 comecei a estagiar como Desenvolvedor Vue.JS para a empresa Dinamio - Joinville."
+        }
+    },
+    "projects": {
+        "title": {
+            "up": "Projetos",
+            "down": "recentes."
+        }
+    },
+    "about": {
+        "title": {
+            "up": "Quem eu",
+            "down": "sou?"
+        },
+        "box-principal": {
+            "title": "Eu sou uma pessoa!",
+            "text": "Para além dos estudos de programação e design, gosto de aproveitar meu tempo livre para sair com amigos, ir para academia e ler bons livros. Em meu fone sempre está tocando algo. Sou fã de samba, mpb e funk."
+        },
+        "cards": {
+            "first": "Sair com amigos",
+            "second": "Academia",
+            "third": "Ler"
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="box-links">
-    <button>Baixar CV</button>
+    <button>{{ $t('links.btn-cv') }}</button>
     <button><img src="../imgs/linkedin.svg" alt="" /></button>
     <button><img src="../imgs/github.svg" alt="" /></button>
   </div>
@@ -70,7 +70,7 @@ button:hover{
   }
   .box-links button:first-child {
     border-radius: 8px;
-    width: 25vw;
+    width: 30vw;
     height: auto;
     font-size: 16px;
   }

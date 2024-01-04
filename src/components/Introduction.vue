@@ -2,14 +2,14 @@
   <section class="introduction" id="introduction">
     <div class="box">
       <div class="box-text">
-        <h2>Olá!</h2>
+        <h2>{{ $t('introduction.hello') }}</h2>
         <p>
-          Meu nome é Pedro Lucas. <br />
-          Sou desenvolvedor front-end e UI/UX designer :)
+          {{ $t('introduction.name') }}<br />
+          {{ $t('introduction.text') }}
         </p>
       </div>
       <div class="box-links">
-        <button class="btn-cv">Baixar CV</button>
+        <button class="btn-cv">{{ $t("links.btn-cv") }}</button>
         <button><img src="../imgs/linkedin.svg" alt="" /></button>
         <button><img src="../imgs/github.svg" alt="" /></button>
       </div>
@@ -139,9 +139,9 @@ button:active {
   }
   .box-links button:first-child {
     border-radius: 16px;
-    padding: 0.75vw;
+    padding: 0.75vw 0;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 12px;
   }
 
   .box-links button img {
