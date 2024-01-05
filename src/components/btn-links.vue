@@ -1,27 +1,12 @@
 <template>
   <div class="box-links">
-    <button>{{ $t('links.btn-cv') }}</button>
-    <button><img src="../imgs/linkedin.svg" alt="" /></button>
-    <button><img src="../imgs/github.svg" alt="" /></button>
+    <button class="btn-cv">{{ $t("links.btn-cv") }}</button>
+    <button><img src="@/assets/linkedin.svg" alt="" /></button>
+    <button><img src="@/assets/github.svg" alt="" /></button>
   </div>
 </template>
 
-<script>
-</script>
-
 <style scoped>
-.box-links {
-  width: 100%;
-  padding: 4vw 10vw;
-  background-color: #bef3ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid black;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-}
-
 button {
   background-color: #c3baff;
   box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.25),
@@ -31,8 +16,18 @@ button {
   transition: opacity 0.2s ease;
 }
 
-button:hover{
+button:hover {
   opacity: 0.7;
+}
+
+button:active {
+  opacity: 1.5;
+}
+
+.box-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box-links button {
@@ -42,13 +37,13 @@ button:hover{
   align-items: center;
   padding: 0.25vw 1vw;
   margin: 0 0.5vw;
-  width: 2.5vw;
+  width: 15%;
 }
 .box-links button:first-child {
   border-radius: 16px;
   padding: 0.75vw 0.5vw;
   font-weight: bold;
-  width: 8vw;
+  width: 50%;
   font-size: 1vw;
 }
 
@@ -58,25 +53,21 @@ button:hover{
 }
 
 @media only screen and (max-width: 600px) {
-  .box-links{
-    border: 1px solid black;
-  }
-
   .box-links button {
-    padding: 0.25vw 1vw;
-    margin: 0 1.5vw;
-    width: 32px;
-    height: 32px;
+    border-radius: 100%;
+    padding: 8px;
+    margin: 0 0.5vw;
   }
   .box-links button:first-child {
-    border-radius: 8px;
-    width: 30vw;
-    height: auto;
-    font-size: 16px;
+    border-radius: 16px;
+    padding: 0.75vw 0;
+    font-weight: bold;
+    font-size: 12px;
   }
 
   .box-links button img {
-    width: 24px;
+    width: 100%;
+    border-radius: 50%;
   }
 }
 </style>

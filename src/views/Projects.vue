@@ -2,8 +2,8 @@
   <section class="projects" id="projects">
     <div>
       <h2>
-        {{ $t('projects.title.up') }} <br />
-        {{ $t('projects.title.down') }}
+        {{ $t("projects.title.up") }} <br />
+        {{ $t("projects.title.down") }}
       </h2>
     </div>
 
@@ -35,13 +35,13 @@
             </div>
             <div class="box-links">
               <a :href="project.github" target="_blank">
-                <img src="../imgs/github.svg" alt="" />
+                <img src="@/assets/github.svg" alt="" />
               </a>
               <a :href="project.deployLink" target="_blank">
-                <img src="../imgs/mdi_cellphone-link.svg" alt="" />
+                <img src="@/assets/mdi_cellphone-link.svg" alt="" />
               </a>
               <button @click="flipBox(project.id)">
-                <img src="../imgs/mdi_rotate-360.svg" alt="" />
+                <img src="@/assets/mdi_rotate-360.svg" alt="" />
               </button>
             </div>
           </div>
@@ -56,13 +56,13 @@
             </div>
             <div class="box-links">
               <a :href="project.github">
-                <img src="../imgs/github.svg" alt="" />
+                <img src="@/assets/github.svg" alt="" />
               </a>
               <a :href="project.deployLink">
-                <img src="../imgs/mdi_cellphone-link.svg" alt="" />
+                <img src="@/assets/mdi_cellphone-link.svg" alt="" />
               </a>
               <button @click="flipBox(project.id)">
-                <img src="../imgs/mdi_rotate-360.svg" alt="" />
+                <img src="@/assets/mdi_rotate-360.svg" alt="" />
               </button>
             </div>
           </div>
@@ -89,13 +89,13 @@
             </div>
             <div class="box-links">
               <a :href="project.github" target="_blank">
-                <img src="../imgs/github.svg" alt="" />
+                <img src="@/assets/github.svg" alt="" />
               </a>
               <a :href="project.deployLink" target="_blank">
-                <img src="../imgs/mdi_cellphone-link.svg" alt="" />
+                <img src="@/assets/mdi_cellphone-link.svg" alt="" />
               </a>
               <button @click="flipBox(project.id)">
-                <img src="../imgs/mdi_rotate-360.svg" alt="" />
+                <img src="@/assets/mdi_rotate-360.svg" alt="" />
               </button>
             </div>
           </div>
@@ -110,13 +110,13 @@
             </div>
             <div class="box-links">
               <a :href="project.github">
-                <img src="../imgs/github.svg" alt="" />
+                <img src="@/assets/github.svg" alt="" />
               </a>
               <a :href="project.deployLink">
-                <img src="../imgs/mdi_cellphone-link.svg" alt="" />
+                <img src="@/assets/mdi_cellphone-link.svg" alt="" />
               </a>
               <button @click="flipBox(project.id)">
-                <img src="../imgs/mdi_rotate-360.svg" alt="" />
+                <img src="@/assets/mdi_rotate-360.svg" alt="" />
               </button>
             </div>
           </div>
@@ -127,11 +127,11 @@
 </template>
   
   <script>
-import IconReact from "../imgs/skill-icons_react-dark.svg";
-import ImgStarWars from "../imgs/starwars 1.png";
-import IconJS from "../imgs/logos_javascript.svg";
-import ImgTravelBackpack from "../imgs/travelbackpack 1.png";
-import ImgCineNow from "../imgs/cinenow 1.png";
+import IconReact from "@/assets/logos_react.svg";
+import ImgStarWars from "@/assets/starwars 1.png";
+import IconJS from "@/assets/logos_javascript.svg";
+import ImgTravelBackpack from "@/assets/travelbackpack 1.png";
+import ImgCineNow from "@/assets/cinenow 1.png";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination } from "swiper/modules";
@@ -183,12 +183,12 @@ export default {
     const isMobile = ref(false);
 
     onMounted(() => {
-      isMobile.value = window.innerWidth <= 600; // Ajuste o valor conforme necessário
+      isMobile.value = window.innerWidth <= 600;
     });
 
     // Atualiza a variável isMobile quando a janela for redimensionada
     window.addEventListener("resize", () => {
-      isMobile.value = window.innerWidth <= 600; // Ajuste o valor conforme necessário
+      isMobile.value = window.innerWidth <= 600;
     });
 
     return { modules: [Pagination], isMobile, swiperTextBase };
@@ -354,7 +354,7 @@ button img:active {
 }
 
 @media only screen and (max-width: 600px) {
-  .projects{
+  .projects {
     padding: 3vh 10vw;
   }
 
@@ -402,7 +402,7 @@ button img:active {
     width: 100%;
   }
 
-  .box-title img{
+  .box-title img {
     width: 16px;
   }
 }
